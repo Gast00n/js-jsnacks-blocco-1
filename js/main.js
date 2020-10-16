@@ -57,23 +57,23 @@
  */
 
 
- var invitati = ['paolo', 'fabio', 'lorenzo'];
- var numinv = invitati.length;
- var user = prompt('Fornisci il tuo nome:').toLowerCase();
- var utenteReg = false;
+//  var invitati = ['paolo', 'fabio', 'lorenzo'];
+//  var numinv = invitati.length;
+//  var user = prompt('Fornisci il tuo nome:').toLowerCase();
+//  var utenteReg = false;
 
- for (var i = 0; i < numinv; i++) {
+//  for (var i = 0; i < numinv; i++) {
 
-    if (user == invitati[i]) {
-        utenteReg = true;
-    }
- }
+//     if (user == invitati[i]) {
+//         utenteReg = true;
+//     }
+//  }
 
- if (utenteReg == true) {
-    document.getElementById('snack4').innerHTML = 'Benvenuto, sei in lista!';
- } else {
-    document.getElementById('snack4').innerHTML = 'Mi spiace, non sei in lista!';
- }
+//  if (utenteReg == true) {
+//     document.getElementById('snack4').innerHTML = 'Benvenuto, sei in lista!';
+//  } else {
+//     document.getElementById('snack4').innerHTML = 'Mi spiace, non sei in lista!';
+//  }
 
 
  /**
@@ -82,4 +82,15 @@
  * 
  */
 
- 
+ var listnum = [];
+
+ for (var i = 0; i < 6; i++) {
+
+    var num = parseInt( prompt('Inserisci un numero') );
+
+    if ((num % 2) != 0) {
+        listnum.push(num);
+    }
+ }
+
+ document.getElementById('snack5').innerHTML = listnum;
