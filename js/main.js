@@ -41,13 +41,13 @@
  * 
  */
 
-var somma = 0;
-for (var i = 0; i < 5; i++) {
-    var number = parseInt( prompt('Inserire un numero:') );
-    somma = somma + number;
-}
+// var somma = 0;
+// for (var i = 0; i < 5; i++) {
+//     var number = parseInt( prompt('Inserire un numero:') );
+//     somma = somma + number;
+// }
 
-document.getElementById('snack3').innerHTML = 'La somma dei numeri inseriti è: ' + somma;
+// document.getElementById('snack3').innerHTML = 'La somma dei numeri inseriti è: ' + somma;
 
 
  /**
@@ -55,6 +55,26 @@ document.getElementById('snack3').innerHTML = 'La somma dei numeri inseriti è: 
  *  SNACK 4 (Decommenta per attivare il codice)
  * 
  */
+
+
+ var invitati = ['paolo', 'fabio', 'lorenzo'];
+ var numinv = invitati.length;
+ var user = prompt('Fornisci il tuo nome:').toLowerCase();
+ var utenteReg = false;
+
+ for (var i = 0; i < numinv; i++) {
+
+    if (user == invitati[i]) {
+        utenteReg = true;
+    }
+ }
+
+ if (utenteReg == true) {
+    document.getElementById('snack4').innerHTML = 'Benvenuto, sei in lista!';
+ } else {
+    document.getElementById('snack4').innerHTML = 'Mi spiace, non sei in lista!';
+ }
+
 
  /**
  * 
